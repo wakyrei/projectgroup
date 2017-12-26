@@ -6,5 +6,4 @@ import com.companyname.rebate.RebateDataResultDTO;
 
 public interface RebateComponent {
 	RebateDataResultDTO getValue(RebateBO rebateBO);
-	void setComponent(RebateComponent component);
 }

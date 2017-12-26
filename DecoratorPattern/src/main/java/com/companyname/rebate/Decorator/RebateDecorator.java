@@ -13,21 +13,7 @@ public class RebateDecorator implements RebateComponent {
     }
 
 
-
-    @Override
-    public void setComponent(RebateComponent component) {
+    public RebateDecorator(RebateComponent component) {
         this.component = component;
-    }
-    public static RebateComponent stream(RebateComponent... rebateComponents) {
-        RebateComponent head= null;
-        for (int i = 0; i < rebateComponents.length; i++) {
-            RebateComponent component = rebateComponents[i];
-            if (i==0){
-                head = component;
-            }else{
-                rebateComponents[i-1].setComponent(component);
-            }
-        }
-        return head;
     }
 }

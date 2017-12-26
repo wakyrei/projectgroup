@@ -14,11 +14,4 @@ public class RebateJoinOrderWithSell implements RebateComponent {
         return dto;
     }
 
-
-
-    @Override
-    public void setComponent(RebateComponent component) {
-        
-    }
-
 }
