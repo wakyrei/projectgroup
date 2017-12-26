@@ -1,12 +1,10 @@
 package com.companyname.rebate.component;
 
 
-import com.companyname.rebate.RebateDataDTO;
+import com.companyname.rebate.RebateBO;
 import com.companyname.rebate.RebateDataResultDTO;
-import com.companyname.rebate.RebateService;
 
 public interface RebateComponent {
-	RebateDataResultDTO getValue(RebateDataDTO rebateDataDTO);
-	RebateService getRebateService();
+	RebateDataResultDTO getValue(RebateBO rebateBO);
 	void setComponent(RebateComponent component);
 }
