@@ -10,12 +10,14 @@ public class Test {
         RebateService service = new RebateService();
         RebateDate rebateDate = new RebateDate();
         RebateBO rebateBO = new RebateBO(rebateDate, service);
-        RebateDataResultDTO value = 
-                new CheckSellOrderStatus(
-                        new CheckSellCurStatus(
-                                new RebateJoinOrderWithSell()
-                        )
-                ).getValue(rebateBO);
+
+        RebateComponent component = new CheckSellOrderStatus(
+                new CheckSellCurStatus(
+                        new RebateJoinOrderWithSell()
+                )
+        );
+        RebateDataResultDTO value = component.getValue(rebateBO);
+        
         System.out.println(value.isOk + "/" + value.value);
 
     }
