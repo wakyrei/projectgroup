@@ -1,5 +1,6 @@
 package com.companyname.projectgroup;
 
+import com.companyname.EnumImplementInterface.EwalletEnum;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -33,6 +34,9 @@ public class AppTest
      */
     public void testApp()
     {
+        System.out.println(EwalletEnum.CX_COIN.getTransactionId());
+        System.out.println(EwalletEnum.DIS_COIN.getTransactionId());
+        System.out.println(EwalletEnum.NET_COIN.getTransactionId());
         assertTrue( true );
     }
 }
